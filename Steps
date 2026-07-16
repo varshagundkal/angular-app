@@ -1,0 +1,53 @@
+Log in to GitHub.
+Click the + icon in the upper-right corner and select New repository.
+Give your repository a name.
+[Important]: Leave "Add a README", ".gitignore", and "License" unchecked to prevent initial conflicts.
+Click Create repository.
+Copy the HTTPS or SSH URL provided on the quick-setup screen (e.g., https://github.com)
+
+git init // initialize git in the project folder
+git branch -M main  //Set your default branch name to main
+git remote add origin PASTE_YOUR_COPIED_URL_HERE //Link the local project to github
+git add . // stage all your files
+git commit -m "Initial commit" //First local commit
+git push -u origin main  //Push the code.(The -u flag links your local branch to the remote branch so you can simply type git push next time.
+
+
+
+npm new <project_name>
+Follow the below project structure:
+src/app/
+├── core/                  # App-wide singleton items (loaded once)
+│   ├── guards/            # Route guards (e.g., auth.guard.ts)
+│   ├── interceptors/      # HTTP interceptors (e.g., jwt.interceptor.ts)
+│   ├── services/          # Global services (e.g., theme.service.ts)
+│   └── models/            # Global TypeScript interfaces/types
+│
+├── shared/                # Reusable building blocks across features
+│   ├── components/        # Dumb/reusable UI components (buttons, cards)
+│   ├── directives/        # Custom directives
+│   ├── pipes/             # Custom pipes
+│   └── utils/             # Helper/utility functions
+│
+├── features/              # Feature-based modules (lazy-loaded routes)
+│   ├── dashboard/         # Example feature folder
+│   │   ├── components/    # Feature-specific child components
+│   │   ├── services/      # Feature-specific services/APIs
+│   │   ├── models/        # Feature-specific data interfaces
+│   │   └── dashboard.routes.ts
+│   │
+│   └── auth/              # Another feature (login, register)
+│
+├── layout/                # Skeleton structure of the application
+│   ├── header/            # Navigation header component
+│   ├── footer/            # Footer component
+│   └── sidebar/           # Sidebar menu component
+│
+├── app.component.ts       # Root component
+├── app.config.ts          # Global application providers & config
+└── app.routes.ts          # Main application routing
+
+
+ng g c features/auth/login
+ng g s core/services/auth
+
