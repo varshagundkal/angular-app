@@ -1,0 +1,11 @@
+1. Use Resolver get data before loading the component and check the real time use
+2. Create routes
+ - Create child routes
+ - Lazy loading using loadChildren and LoadComponent
+
+3. Auth guards
+	- canActivate on /dashboard
+	- CanActivateChild
+	- canDeactivate
+	- canMatch
+4. Exception handling

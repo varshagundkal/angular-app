@@ -48,6 +48,22 @@ src/app/
 └── app.routes.ts          # Main application routing
 
 
-ng g c features/auth/login
-ng g s core/services/auth
+ng g c features/auth/components/login
+ng g environments
+ng g interceptor core/interceptors/auth
+ng g interceptor core/interceptors/api-key 
+ng g s features/auth/services/auth     
+
+API keys goes in environment object which acn be accessed while calling apis
+
+Steps:
+1. Create login component. 
+ - Create a reactive form in ts file and make a template(html ) for it.
+ - Create a auth service where you will have login, register, forget password services
+ - Create an interceptor  
+
+
+APIs used from:  https://dummyjson.com/
+Login: '/auth/login'   username: emilys
+                       password: emilyspass
 

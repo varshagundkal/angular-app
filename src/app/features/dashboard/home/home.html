@@ -1,0 +1,15 @@
+<p>home works!</p>
+<button class="button" (click)="logout()">Logout</button>
+
+<div class="card">
+    <!-- 6.  Signal Query ELement -->
+     <h2 #titleElement>Product Panel</h2>
+
+     <!-- <p> Store Branch: <strong>{{ storeBranch()}} </strong></p> -->
+
+     <!-- writable signals -->
+      <div>Quantity: {{quantity()}}</div>
+      <button (click)="increment()">Increment</button>
+      <button (click)="decrement()">Decrement</button>
+      <div>{{ totalCost() }}</div>
+</div>
