@@ -1,16 +1,19 @@
 import { Component, computed, inject, linkedSignal, signal } from '@angular/core';
 import { Auth } from '../../auth/services/auth';
 import { Router } from '@angular/router';
+import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
+import { SearchAutocomplete } from '../../../shared/search-autocomplete/search-autocomplete';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [ReactiveFormsModule, SearchAutocomplete],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
 export class Home {
 
   private router = inject(Router)
+  searchControl = new FormControl<string>('')
 
   // Writable Signals::
   quantity = signal<number>(1)

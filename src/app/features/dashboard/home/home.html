@@ -1,5 +1,5 @@
-<p>home works!</p>
-<button class="button" (click)="logout()">Logout</button>
+
+<button class="logout-btn" (click)="logout()">Logout</button>
 
 <div class="card">
     <!-- 6.  Signal Query ELement -->
@@ -12,4 +12,13 @@
       <button (click)="increment()">Increment</button>
       <button (click)="decrement()">Decrement</button>
       <div>{{ totalCost() }}</div>
+</div>
+
+<div class="seatch-container">
+    <label></label>
+    <input type="text" [formControl]="searchControl" placeholder="Search user">
+</div>
+
+<div class="search-autocomplete">
+    <app-search-autocomplete></app-search-autocomplete>
 </div>

@@ -10,7 +10,7 @@ git branch -M main  //Set your default branch name to main
 git remote add origin PASTE_YOUR_COPIED_URL_HERE //Link the local project to github
 git add . // stage all your files
 git commit -m "Initial commit" //First local commit
-git push -u origin main  //Push the code.(The -u flag links your local branch to the remote branch so you can simply type git push next time.
+git push -u origin main  //Push the code.(The -u flag links your local branch to the remote branch so you can simply type git push next time.)
 
 
 
@@ -67,3 +67,7 @@ APIs used from:  https://dummyjson.com/
 Login: '/auth/login'   username: emilys
                        password: emilyspass
 
+
+Search Autocomplete::
+-  ng g c search-autocomplete 
+- 

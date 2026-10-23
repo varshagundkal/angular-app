@@ -1,0 +1,11 @@
+**** Tasks ***
+1. Create an Angular page that:
+- Searches products while the user types.
+- Cancels an old request when a newer search term arrives.
+- Loads a product and a user’s carts in parallel.
+- Handles errors, retries transient failures, and exposes loading status.
+- Caches categories.
+- Demonstrates safe handling of POST/PATCH actions.
+
+2. Build a search with autocomplete (RXJS + mat-autocomplete)
+3. Build a real-time dashboard using WebSockets and RxJS.
